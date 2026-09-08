@@ -8,9 +8,6 @@
              Wick® Studio | discord.gg/wicks
 */
 
-
-const ms = require('ms');
-
 require('dotenv').config();
 const ms = require('ms');
 
@@ -19,29 +16,29 @@ module.exports = {
             
   // اوقات التجميد لكل امر
   cooldowns: {
-    راتب: ms('1d'), // زيادة المهلة للحصول على الراتب
-    حظ: ms('2h'), // زيادة المهلة لأمر الحظ
-    استثمار: ms('4h'), // زيادة المهلة للاستثمار
-    تداول: ms('4h'), // زيادة المهلة للتداول
-    قرض: ms('2h'), // زيادة المهلة لأخذ قرض جديد
-    توب: ms('30s'), // زيادة المهلة لقائمة الأغنياء
-    نرد: ms('4h'), // زيادة المهلة للعبة النرد
-    قمار: ms('4h'), // زيادة المهلة لأمر القمار
-    نهب: ms('4h'), // زيادة المهلة لأمر النهب
-    حماية: ms('4h'), // زيادة المهلة لتفعيل الحماية
-    يومي: ms('2d'), // زيادة المهلة للأمر اليومي
-    شراء: ms('1m'), // زيادة المهلة لأمر الشراء
-    منازل: ms('1m'), // زيادة المهلة لأمر المنازل
-    شركات: ms('1m'), // زيادة المهلة لأمر الشركات
-    شراء_شركة: ms('1m'), // زيادة المهلة لشراء شركة
-    بيع_شركة: ms('1m'), // زيادة المهلة لبيع شركة
+    راتب: ms('1d'),
+    حظ: ms('2h'),
+    استثمار: ms('4h'),
+    تداول: ms('4h'),
+    قرض: ms('2h'),
+    توب: ms('30s'),
+    نرد: ms('4h'),
+    قمار: ms('4h'),
+    نهب: ms('4h'),
+    حماية: ms('4h'),
+    يومي: ms('2d'),
+    شراء: ms('1m'),
+    منازل: ms('1m'),
+    شركات: ms('1m'),
+    شراء_شركة: ms('1m'),
+    بيع_شركة: ms('1m'),
   },
 
-  startingSalary: 500, // تقليل الراتب الابتدائي
-  investmentMultiplier: 1.1, // تقليل مضاعف الاستثمار لجعل الربح أصعب
-  transferTaxRate: 0.20, // زيادة نسبة الضريبة على التحويلات المالية
-  gambleMultiplier: 1.5, // تقليل مضاعف القمار لجعل الربح أقل
-  rentInterval: ms('1h'), // تسديد القرض التلقائي
+  startingSalary: 500,
+  investmentMultiplier: 1.1,
+  transferTaxRate: 0.20,
+  gambleMultiplier: 1.5,
+  rentInterval: ms('1h'),
 
   // إعدادات قائمة الأوامر
   commandsListTitle: '📜 قائمة الأوامر الخاصة بالبوت 📜',
@@ -55,12 +52,12 @@ module.exports = {
   topPlayersEmbedColor: '#FFD700',
 
   // إعدادات الحظ
-  luckMinAmount: 500, // تقليل أقل مبلغ يمكن الحصول عليه بالحظ
-  luckMaxAmount: 2500, // تقليل أكبر مبلغ يمكن الحصول عليه بالحظ
+  luckMinAmount: 500,
+  luckMaxAmount: 2500,
 
   // إعدادات الحماية
-  shieldMaxHours: 3, // تقليل أقصى عدد ساعات للحماية
-  shieldCostPerHour: 500000, // زيادة تكلفة كل ساعة من الحماية
+  shieldMaxHours: 3,
+  shieldCostPerHour: 500000,
 
   // الوظائف
   jobTitles: [
@@ -75,16 +72,15 @@ module.exports = {
     { name: 'جندي', cost: 15000, salary: 1500 },
     { name: 'طباخ', cost: 10000, salary: 1000 },
     { name: 'رسام', cost: 8000, salary: 800 },
-    // تقدر تضيف وظائف هنا بنفس النمط
-],
+  ],
 
   pointsPerWin: 5,
   pointsPerLoss: -2,
-  baseSalary: 10000, // الراتب الاساسي
+  baseSalary: 10000,
 
   // قائمة المنازل المتاحة
   houses: [
-    { price: 1000000, income: 200000, ownerId: null }, // زيادة سعر المنازل وتقليل الدخل
+    { price: 1000000, income: 200000, ownerId: null },
     { price: 1000000, income: 200000, ownerId: null },
     { price: 1000000, income: 200000, ownerId: null },
     { price: 1000000, income: 200000, ownerId: null },
