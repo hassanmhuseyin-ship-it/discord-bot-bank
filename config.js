@@ -11,10 +11,12 @@
 
 const ms = require('ms');
 
-module.exports = {
-  token: '', // التوكن
-  allowedChannelId: '', // ايدي روم خاص للبنك
+require('dotenv').config();
+const ms = require('ms');
 
+module.exports = {
+  token: process.env.DISCORD_BOT_TOKEN,
+            
   // اوقات التجميد لكل امر
   cooldowns: {
     راتب: ms('1d'), // زيادة المهلة للحصول على الراتب
